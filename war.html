@@ -6,6 +6,53 @@
   <title>W.A.R. Memorial Nurse Aide I Training Academy</title>
   <meta name="description" content="Nurse Aide I training academy in Durham, NC." />
   <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    /* Hero Section Final Fix with Gradient */
+    .hero {
+        background-image: linear-gradient(90deg, 
+            rgba(0, 71, 82, 0.95) 0%, 
+            rgba(0, 71, 82, 0.7) 50%, 
+            rgba(0, 0, 0, 0.2) 100%), 
+            url('assets/hero-training.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 60px 0;
+        position: relative;
+    }
+
+    .hero-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* মোবাইলের জন্য রেসপন্সিভ ডিজাইন */
+    @media (max-width: 768px) {
+        .hero {
+            background-image: linear-gradient(180deg, 
+                rgba(0, 71, 82, 0.9) 0%, 
+                rgba(0, 71, 82, 0.8) 100%), 
+                url('assets/hero-training.png');
+            text-align: center;
+            padding: 40px 0;
+        }
+        .hero-container {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+  </style>
 </head>
 <body>
   <div class="topbar">
@@ -34,7 +81,9 @@
   </header>
 
   <main>
-<section class="hero" style="background-image: linear-gradient(90deg, rgba(0, 71, 82, 0.9) 0%, rgba(0, 71, 82, 0.6) 50%, rgba(0, 0, 0, 0) 100%), url('assets/hero-training.png'); background-size: cover; background-position: center;">  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
         <div class="hero-copy reveal">
           <p class="eyebrow">Durham, North Carolina</p>
           <h1>Train for a meaningful healthcare career.</h1>
@@ -56,6 +105,7 @@
       </div>
     </section>
 
+    <!-- Professional Training Section -->
     <section>
       <div class="container section-head reveal">
         <div>
@@ -71,6 +121,7 @@
       </div>
     </section>
 
+    <!-- Leadership Section -->
     <section class="soft">
       <div class="container leadership">
         <figure class="photo-figure reveal">
@@ -101,6 +152,7 @@
       </div>
     </section>
 
+    <!-- Mission Section -->
     <section>
       <div class="container split">
         <div class="reveal">
@@ -120,6 +172,7 @@
       </div>
     </section>
 
+    <!-- Founder Section -->
     <section class="soft">
       <div class="container founder">
         <div class="media-frame tall reveal">
